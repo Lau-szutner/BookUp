@@ -1,0 +1,26 @@
+:root {
+  --color-primary: #434343;
+}
+
+#libreria {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 1%,
+    rgba(255, 255, 255, 1) 99%
+  );
+  color: white;
+}
+
+#comunidad {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 1%,
+    rgba(255, 255, 255, 1) 99%
+  );
+  color: white;
+}
+
+#shop {
+  background-color: var(--color-primary);
+  color: white;
+}
