@@ -3,21 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="icon" href="img/favicon/icon-192x192.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>BookUp</title>
   </head>
   <body>
     <!--  -->
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+      data-bs-theme="dark"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand fs-3" href="#">BookUp</a>
+        <a class="navbar-brand fs-3" href="#"><h1 class="fs-3">BookUp</h1></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -32,15 +37,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a class="nav-link" aria-current="page" href="#libreria"
                 >Library</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Shop</a>
+              <a class="nav-link" href="#comunidad">comunidad</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Comunnity</a>
+              <a class="nav-link" href="#shop">shop</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -60,40 +65,45 @@
     <!--  -->
     <main>
       <!-- Libreria -->
-      <section class="container-fluid" id="libreria">
+      <section id="libreria">
         <div class="container p-5">
-          <h2 class="mt-5 mb-5 fs-1 ">Mis libros actuales:</h2>
+          <h2 class="mt-5 mb-5 fs-1">Mis libros actuales:</h2>
 
           <button type="button" class="btn btn-success mb-5">
-            Ver libreria completa
+            <a
+              href="./pages/libros.html"
+              class="btn btn-link text-decoration-none text-white"
+              >Ver toda tu librearia</a
+            >
           </button>
-
-          <div class="d-flex gap-5 flex-column flex-md-row flex-wrap">
-            <div class="col-md-3">
+          <h2>Ultimo acceso:</h2>
+          <div class="d-flex flex-column">
+            <div class="col-sm-6 col-lg-3">
               <div class="card">
-                <img src="img/Lotr.jpg" class="card-img-top" alt="..." />
+                <img
+                  src="img/Lotr.jpg"
+                  class="card-img-top"
+                  alt="El señor de los anillos portada"
+                />
                 <div class="card-body">
                   <h5 class="card-title">El señor de los anillos</h5>
-                  <p class="card-text">J R R tolkien</p>
-                  <a href="#" class="btn btn-primary">Marcar como leído</a>
+                  <p class="card-text">J. R. R. Tolkien</p>
+                  <a href="#" class="btn btn-primary">Leer</a>
                 </div>
               </div>
             </div>
-
-          <!-- Repite para cada libro -->
+          </div>
         </div>
       </section>
       <!-- Libreria -->
 
       <!-- Comunidad -->
-      <section class="container-fluid" id="comunidad">
+      <section id="comunidad">
         <div class="container p-5">
-          <div
-            class="d-flex flex-column justify-content-between align-items-center"
-          >
-            <h2 class="mt-5 mb-5 fs-1 col-3">Comunidad</h2>
+          <div class="d-flex flex-column align-items-center">
+            <h2 class="mt-5 mb-5 fs-1">Comunidad</h2>
             <form
-              class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-2 col-9"
+              class="d-flex flex-column flex-lg-row align-items-center gap-2 col-9"
               role="search"
             >
               <input
@@ -103,7 +113,7 @@
                 aria-label="Search"
               />
               <button
-                class="btn btn-outline-light h-25 col-12 col-lg-3"
+                class="btn btn-outline-light col-12 col-lg-3"
                 type="submit"
               >
                 Buscar por intereses
@@ -192,36 +202,6 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="card">
-                <img src="img/Lotr.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">El señor de los anillos</h5>
-                  <p class="card-text">J R R tolkien</p>
-                  <a href="#" class="btn btn-primary">Marcar como leído</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <img src="img/Lotr.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">El señor de los anillos</h5>
-                  <p class="card-text">J R R tolkien</p>
-                  <a href="#" class="btn btn-primary">Marcar como leído</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <img src="img/Lotr.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">El señor de los anillos</h5>
-                  <p class="card-text">J R R tolkien</p>
-                  <a href="#" class="btn btn-primary">Marcar como leído</a>
-                </div>
-              </div>
-            </div>
           </div>
           <!-- Repite para cada libro -->
         </div>
@@ -233,5 +213,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="js/register.js"></script>
   </body>
 </html>
