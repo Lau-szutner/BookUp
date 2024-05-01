@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="icon" href="img/favicon/icon-192x192.png" />
+    <link
+      rel="stylesheet"
+      href="../css/bootstrap-5.3.3/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>BookUp</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand fs-3" href="../index.html"
+            ><h1 class="fs-3">BookUp</h1></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#libreria"
+                  >Library</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#comunidad">comunidad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#shop">shop</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="comunidad">
+        <div class="container p-5">
+          <div class="mt-5 d-flex justify-content-center">
+            <div class="col-md-10">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <p class="card-subtitle mb-2 text-muted">Rojan27</p>
+                  <h5 class="card-title">
+                    Unas Cuantas Dudas Sobre El Señor de los Anillos
+                  </h5>
+                  <p class="card-text">
+                    ¡Hola, comunidad de Tolkien! Quiero empezar diciendo que amo
+                    el universo de El Señor de los Anillos tanto como el próximo
+                    fanático. Pero, ¿soy el único que tiene unas cuantas dudas?
+                    Por ejemplo, ¿alguien puede explicarme por qué los Eagles no
+                    llevaron a Frodo directamente al Monte del Destino? Quiero
+                    decir, podríamos haber ahorrado muchas páginas y dramatismo,
+                    ¿no? Y hablando de eso, ¿por qué Frodo y Sam no se subieron
+                    a uno de los caballos de Rohan o Gondor cuando tenían la
+                    oportunidad? No estoy tratando de arruinar la magia aquí,
+                    solo me hacen rascar la cabeza un poco. Si alguien tiene
+                    alguna teoría o explicación, ¡por favor, ilumínenme!
+                  </p>
+                  <div class="form-floating d-flex flex-column gap-2 mt-5">
+                    <textarea
+                      class="form-control"
+                      placeholder="Leave a comment here"
+                      id="floatingTextarea"
+                    ></textarea>
+                    <label for="floatingTextarea">Comentar</label>
+                    <button type="button" class="btn btn-success mb-5">
+                      Subir comentario
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -6,6 +6,8 @@ const offlineFallbackPage = "offline.html";
 
 // Install stage sets up the offline page in the cache and opens a new cache
 self.addEventListener("install", function (event) {
+  self.skipWaiting();
+
   event.waitUntil(
     caches.open(CACHE).then(function (cache) {
       return cache.add(offlineFallbackPage);

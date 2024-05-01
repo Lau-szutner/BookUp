@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="icon" href="img/favicon/icon-192x192.png" />
+    <link
+      rel="stylesheet"
+      href="../css/bootstrap-5.3.3/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>BookUp</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand fs-3" href="../index.html"
+            ><h1 class="fs-3">BookUp</h1></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#libreria"
+                  >Library</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#comunidad">comunidad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#shop">shop</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="comunidad">
+        <div class="container p-5">
+          <div class="mt-5 d-flex justify-content-center">
+            <div class="col-md-10">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <p class="card-subtitle mb-2 text-muted">Gandalf123</p>
+                  <h5 class="card-title">
+                    Las Preguntas No Respondidas de El Señor de los Anillos:
+                    ¡Necesito Respuestas!
+                  </h5>
+                  <p class="card-text">
+                    ¡Saludos, compañeros de la Comarca! Estoy aquí para
+                    compartir algunas inquietudes que me han estado molestando
+                    sobre El Señor de los Anillos. Primero, ¿alguien más se ha
+                    preguntado por qué Sauron confió tanto en los orcos para
+                    llevar a cabo sus planes? Quiero decir, ¿no son notoriamente
+                    desorganizados y propensos a pelear entre ellos? ¿Por qué no
+                    recurrió a una fuerza más confiable? Además, ¿qué pasa con
+                    el hecho de que Frodo y compañía no usaran a los Palantír
+                    más a menudo? Esas bolas de cristal podrían haber
+                    simplificado bastante su viaje, ¿no creen? Y, por último,
+                    ¿por qué nunca discuten la posibilidad de simplemente
+                    destruir el Anillo en Rivendel o Lothlórien en lugar de ir
+                    todo el camino hasta Mordor? Sé que hay razones narrativas,
+                    ¡pero necesito un poco más de lógica aquí! Si alguien tiene
+                    respuestas o teorías, ¡por favor, compártanlas!
+                  </p>
+                  <div class="form-floating d-flex flex-column gap-2 mt-5">
+                    <textarea
+                      class="form-control"
+                      placeholder="Leave a comment here"
+                      id="floatingTextarea"
+                    ></textarea>
+                    <label for="floatingTextarea">Comentar</label>
+                    <button type="button" class="btn btn-success mb-5">
+                      Subir comentario
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

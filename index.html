@@ -6,62 +6,62 @@
     <link rel="manifest" href="site.webmanifest" />
     <link rel="icon" href="img/favicon/icon-192x192.png" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
+      href="./css/bootstrap-5.3.3/dist/css/bootstrap.css"
     />
     <link rel="stylesheet" href="css/style.css" />
     <title>BookUp</title>
   </head>
   <body>
     <!--  -->
-
-    <nav
-      class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
-      data-bs-theme="dark"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand fs-3" href="#"><h1 class="fs-3">BookUp</h1></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#libreria"
-                >Library</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#comunidad">comunidad</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#shop">shop</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand fs-3" href="#"><h1 class="fs-3">BookUp</h1></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#libreria"
+                  >Library</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#comunidad">comunidad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#shop">shop</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
+
     <!--  -->
     <main>
       <!-- Libreria -->
@@ -126,16 +126,21 @@
               <div class="col-md-6">
                 <div class="card mb-3">
                   <div class="card-body">
-                    <h5 class="card-title">Porque frodo gandalf es malo</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Pedrito11</h6>
+                    <p class="card-subtitle mb-2 text-muted">Rojan27</p>
+                    <h5 class="card-title">
+                      Unas Cuantas Dudas Sobre El Señor de los Anillos
+                    </h5>
                     <p class="card-text">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Aspernatur dolorum consequatur ducimus, sunt rerum
-                      repudiandae veritatis inventore nam quas tempore
-                      laboriosam illo minima vero, consequuntur sint nostrum
-                      impedit adipisci recusandae?
+                      ¡Hola, comunidad de Tolkien! Quiero empezar diciendo que
+                      amo el universo de El Señor de los Anillos tanto como el
+                      próximo fanático. Pero, ¿soy el único que tiene unas
+                      cuantas dudas? Por ejemplo, ¿alguien puede explicarme por
+                      qué los Eagles no llevaron a Frodo directamente al Monte
+                      del Destino?
                     </p>
-                    <a href="#" class="card-link">Enlace al post completo</a>
+                    <a href="./pages/post1.html" class="card-link"
+                      >Enlace al post completo</a
+                    >
                   </div>
                 </div>
               </div>
@@ -143,16 +148,23 @@
               <div class="col-md-6">
                 <div class="card mb-3">
                   <div class="card-body">
-                    <h5 class="card-title">Título del Post</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">
+                    <p class="card-subtitle mb-2 text-muted">
                       Nombre de Usuario
-                    </h6>
-                    <p class="card-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Est dolores vero nesciunt adipisci nemo velit hic enim
-                      recusandae blanditiis ab?
                     </p>
-                    <a href="#" class="card-link">Enlace al post completo</a>
+                    <h5 class="card-title">
+                      Las Preguntas No Respondidas de El Señor de los Anillos:
+                      ¡Necesito Respuestas!
+                    </h5>
+                    <p class="card-text">
+                      ¡Saludos, compañeros de la Comarca! Estoy aquí para
+                      compartir algunas inquietudes que me han estado molestando
+                      sobre El Señor de los Anillos. Primero, ¿alguien más se ha
+                      preguntado por qué Sauron confió tanto en los orcos para
+                      llevar a cabo sus planes?
+                    </p>
+                    <a href="./pages/post2.html" class="card-link"
+                      >Enlace al post completo</a
+                    >
                   </div>
                 </div>
               </div>
@@ -188,10 +200,29 @@
               </button>
             </form>
           </div>
-
           <div
             class="d-flex gap-5 flex-column flex-md-row flex-wrap justify-content-center"
           >
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/Lotr.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">El señor de los anillos</h5>
+                  <p class="card-text">J R R tolkien</p>
+                  <a href="#" class="btn btn-primary">Marcar como leído</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/Lotr.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">El señor de los anillos</h5>
+                  <p class="card-text">J R R tolkien</p>
+                  <a href="#" class="btn btn-primary">Marcar como leído</a>
+                </div>
+              </div>
+            </div>
             <div class="col-md-3">
               <div class="card">
                 <img src="img/Lotr.jpg" class="card-img-top" alt="..." />
@@ -208,11 +239,7 @@
       </section>
     </main>
     <footer></footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <script src="./css/bootstrap-5.3.3/dist/js/bootstrap.js"></script>
     <script src="js/register.js"></script>
   </body>
 </html>
