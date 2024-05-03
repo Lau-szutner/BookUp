@@ -7,7 +7,6 @@ const offlineFallbackPage = "offline.html";
 // Install stage sets up the offline page in the cache and opens a new cache
 self.addEventListener("install", function (event) {
   self.skipWaiting();
-
   event.waitUntil(
     caches.open(CACHE).then(function (cache) {
       return cache.add(offlineFallbackPage);
@@ -17,7 +16,6 @@ self.addEventListener("install", function (event) {
 
 // If any fetch fails, it will look for the request in the cache and serve it from there first
 self.addEventListener("fetch", function (event) {
-  // Solo manejar solicitudes GET con esquema HTTP o HTTPS
   if (event.request.method !== "GET" || !event.request.url.startsWith("http"))
     return;
 
